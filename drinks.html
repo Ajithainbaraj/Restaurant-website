@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drinks Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 30px
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff6600;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin: 30px 0;
+    }
+
+    .title {
+      color: #ff6600;
+      font-size: 1.5rem;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      
+    }
+
+    .price {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .price {
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>DRINKS MENU</h1>
+
+    <div class="section">
+      <div class="title">Fresh Juices</div>
+      <div class="item">
+        <span class="item-name">Orange Juice</span>
+        <span class="price">50</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Apple Juice</span>
+        <span class="price">50</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Mango Juice</span>
+        <span class="price">50</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">Cold Beverages</div>
+      <div class="item">
+        <span class="item-name">Iced Tea</span>
+        <span class="price">60</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Coca-Cola / Pepsi</span>
+        <span class="price">50</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Lemon Soda</span>
+        <span class="price">40</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">Hot Beverages</div>
+      <div class="item">
+        <span class="item-name">Coffee (Hot)</span>
+        <span class="price">30</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Masala Chai</span>
+        <span class="price">40</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Hot Chocolate</span>
+        <span class="price">60</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
