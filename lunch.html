@@ -8,56 +8,98 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
+      background-color: #fffefc;
       color: #333;
       display: flex;
       justify-content: center;
+      padding: 20px;
     }
 
     .container {
-      max-width: 700px;
-      padding: 30px;
+      max-width: 900px;
+      width: 100%;
     }
 
     h1 {
       text-align: center;
       color: #ff6600;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 30px;
     }
 
     .section {
-      margin: 30px 0;
+      margin: 40px 0;
     }
 
     .title {
-      color: #ff6600;
-      font-size: 1.5rem;
-      border-bottom: 2px solid #ffe5d0;
+      color: #e65100;
+      font-size: 2rem;
+      border-bottom: 3px dashed #ffcc80;
       padding-bottom: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     .item {
       display: flex;
       justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px dotted #ccc;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff5eb;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .item-name {
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 
     .price {
-      color: #ff6600;
+      color: #ff5722;
+      font-size: 1.2rem;
       font-weight: bold;
+      margin-top: 8px;
     }
 
-    @media (max-width: 400px) {
+    .item img {
+      width: 180px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-left: 30px;
+      border: 3px solid #ffcc80;
+      transition: transform 0.3s ease;
+    }
+
+    .item img:hover {
+      transform: scale(1.05);
+      border-color: #ffa726;
+    }
+
+    @media (max-width: 700px) {
       .item {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .price {
-        margin-top: 5px;
+      .item img {
+        width: 100%;
+        height: auto;
+        margin: 15px 0 0;
+      }
+
+      .details {
+        align-items: flex-start;
       }
     }
   </style>
@@ -65,47 +107,69 @@
 <body>
 
   <div class="container">
-    <h1>LUNCH MENU</h1>
+    <h1>🍽️ LUNCH MENU</h1>
 
     <div class="section">
       <div class="title">Starters</div>
       <div class="item">
-        <span class="item-name">Tomato Basil Soup</span>
-        <span class="price">50</span>
+        <div class="details">
+          <div class="item-name">Tomato Basil Soup</div>
+          <div class="price">₹50</div>
+        </div>
+        <img src="https://bing.com/th?id=OSK.42c00220e73597f9742c24822e674cce" alt="Tomato Soup">
       </div>
       <div class="item">
-        <span class="item-name">Grilled Garlic Bread</span>
-        <span class="price">60</span>
+        <div class="details">
+          <div class="item-name">Grilled Garlic Bread</div>
+          <div class="price">₹60</div>
+        </div>
+        <img src="https://grillonadime.com/wp-content/uploads/2022/01/grilled-garlic-bread-8-3.jpg" alt="Garlic Bread">
       </div>
     </div>
 
     <div class="section">
       <div class="title">Main Dish</div>
       <div class="item">
-        <span class="item-name">Veg meals</span>
-        <span class="price">80</span>
+        <div class="details">
+          <div class="item-name">Veg Meals</div>
+          <div class="price">₹80</div>
+        </div>
+        <img src="https://as1.ftcdn.net/jpg/11/07/77/80/1000_F_1107778011_lWpJDdyIMAUUiyLk0cLPkLWdu4PNmkGM.jpg" alt="Veg Meals">
       </div>
       <div class="item">
-        <span class="item-name">Non-Veg</span>
-        <span class="price">100</span>
+        <div class="details">
+          <div class="item-name">Non-Veg</div>
+          <div class="price">₹100</div>
+        </div>
+        <img src="https://4.bp.blogspot.com/-Zrs3g3pikYs/WDCNSrilpdI/AAAAAAAASMc/CBO1bztG_U83QO384jrRtBYSYrauxImaACLcB/s1600/Virundhu%2Brecipe.jpg" alt="Non Veg Meals">
       </div>
       <div class="item">
-        <span class="item-name">Cheeseburger with Fries</span>
-        <span class="price">60</span>
+        <div class="details">
+          <div class="item-name">Cheeseburger with Fries</div>
+          <div class="price">₹60</div>
+        </div>
+        <img src="http://worktruckdirect.com/wp-content/uploads/2015/01/burger-and-fries.jpg" alt="Cheeseburger">
       </div>
     </div>
 
     <div class="section">
       <div class="title">Beverages</div>
       <div class="item">
-        <span class="item-name">Lemon Iced Tea</span>
-        <span class="price">30</span>
+        <div class="details">
+          <div class="item-name">Lemon Iced Tea</div>
+          <div class="price">₹30</div>
+        </div>
+        <img src="https://img.freepik.com/premium-photo/lemon-iced-tea-soft-drinks-mint-lemon_989707-2.jpg" alt="Lemon Tea">
       </div>
       <div class="item">
-        <span class="item-name">Soft Drink (Can)</span>
-        <span class="price">50</span>
+        <div class="details">
+          <div class="item-name">Soft Drink (Can)</div>
+          <div class="price">₹50</div>
+        </div>
+        <img src="https://c.pxhere.com/images/ab/f4/d4db1d58b4b752162b431dd500e8-1456355.jpg!d" alt="Soft Drink">
       </div>
     </div>
+
   </div>
 
 </body>
